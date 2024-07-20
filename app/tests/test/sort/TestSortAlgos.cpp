@@ -1,12 +1,15 @@
 #include "CppUTest/CommandLineTestRunner.h"
 
 #include "BubbleSort.hpp"
+#include "SelectionSort.hpp"
 
 using namespace app::algo::sort;
 
 TEST_GROUP(TestSort)
 {
     SortBase<BubbleSort>* bubbleSort = new BubbleSort();
+
+    SelectionSort selectionSort;
 
     static const size_t length = 5;
 
@@ -26,6 +29,17 @@ TEST(TestSort, bubbleSortTest)
     }
 
     delete bubbleSort;
+}
+
+TEST(TestSort, selectionSortTest)
+{
+    selectionSort.sort(data, length);
+
+    for (int idx = 0; idx < length; ++idx)
+    {
+        //CHECK_EQUAL(expect[idx], data[idx]);
+        printf("data = %d, ", data[idx]);
+    }
 }
 
 int main(int ac, char** av)

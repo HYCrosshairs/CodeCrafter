@@ -1,0 +1,117 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/cxxplot/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 173,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 202,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 209,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 218,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cxxplot-0.4.2",
+			"paths" : 
+			[
+				"lib/cxxplot/libcxxplot.a"
+			],
+			"targetId" : "cxxplot::@72e93f16c8b0ed8e2d01",
+			"targetIndex" : 47,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/cxxplot-0.4.2/cxxplot",
+			"paths" : 
+			[
+				"lib/cxxplot/include/cxxplot/align.hpp",
+				"lib/cxxplot/include/cxxplot/color.hpp",
+				"lib/cxxplot/include/cxxplot/concepts.hpp",
+				"lib/cxxplot/include/cxxplot/cxxplot",
+				"lib/cxxplot/include/cxxplot/execution.hpp",
+				"lib/cxxplot/include/cxxplot/figure.hpp",
+				"lib/cxxplot/include/cxxplot/image.hpp",
+				"lib/cxxplot/include/cxxplot/gettersetter.hpp",
+				"lib/cxxplot/include/cxxplot/graph.hpp",
+				"lib/cxxplot/include/cxxplot/named_parameter.hpp",
+				"lib/cxxplot/include/cxxplot/point2d.hpp",
+				"lib/cxxplot/include/cxxplot/range.hpp",
+				"lib/cxxplot/include/cxxplot/styles.hpp",
+				"lib/cxxplot/include/cxxplot/typetraits.hpp",
+				"lib/cxxplot/include/cxxplot/utils.hpp",
+				"lib/cxxplot/include/cxxplot/window.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/cxxplot-0.4.2",
+			"exportName" : "cxxplotTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "cxxplot::@72e93f16c8b0ed8e2d01",
+					"index" : 47
+				}
+			],
+			"paths" : 
+			[
+				"lib/cxxplot/CMakeFiles/Export/9c6f1a8c98bfafc1ac9dedafbbd09e1b/cxxplotTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/cxxplot-0.4.2",
+			"paths" : 
+			[
+				"cmake-build-debug/lib/cxxplot/cmake/cxxplotConfig.cmake",
+				"cmake-build-debug/lib/cxxplot/cmake/cxxplotConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/cxxplot",
+		"source" : "lib/cxxplot"
+	}
+}
