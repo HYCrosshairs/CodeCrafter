@@ -9,4 +9,5 @@ target_include_directories(PLOT
 target_link_libraries(PLOT
     PRIVATE
         cxxplot::cxxplot
+        HY::COMMON
 )

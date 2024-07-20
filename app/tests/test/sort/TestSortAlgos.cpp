@@ -7,7 +7,7 @@ using namespace app::algo::sort;
 
 TEST_GROUP(TestSort)
 {
-    SortBase<BubbleSort>* bubbleSort = new BubbleSort();
+    BubbleSort bubbleSort;
 
     SelectionSort selectionSort;
 
@@ -21,14 +21,12 @@ TEST_GROUP(TestSort)
 
 TEST(TestSort, bubbleSortTest)
 {
-    bubbleSort->sort(data, length);
+    bubbleSort.sort(data, length);
 
     for (int idx = 0; idx < length; ++idx)
     {
         CHECK_EQUAL(expect[idx], data[idx]);
     }
-
-    delete bubbleSort;
 }
 
 TEST(TestSort, selectionSortTest)
@@ -37,8 +35,7 @@ TEST(TestSort, selectionSortTest)
 
     for (int idx = 0; idx < length; ++idx)
     {
-        //CHECK_EQUAL(expect[idx], data[idx]);
-        printf("data = %d, ", data[idx]);
+        CHECK_EQUAL(expect[idx], data[idx]);
     }
 }
 
