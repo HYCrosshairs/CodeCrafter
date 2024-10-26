@@ -14,7 +14,7 @@ int main( int argc, char* argv[] )
 
         for ( int i = 0; i <= 100; i++ )
         {
-            double x = i;
+            double x = i * 0.1;
             double y = algo::common::lib::minmax(-7.0, 7.0, 10 * sin(x));
             data.push_back({x, y});
         }
